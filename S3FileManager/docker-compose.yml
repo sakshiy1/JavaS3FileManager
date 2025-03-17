@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: ..
+    container_name: s3-manager-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/file-storage-db
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:6
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mongo-data:

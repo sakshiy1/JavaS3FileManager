@@ -1,0 +1,18 @@
+ Project: Java Spring Boot + AWS S3 for File Storage
+🔹 Tech Stack: Java, Spring Boot, AWS S3, REST API, Docker (optional)
+🔹 Concepts Covered: REST API, AWS SDK, File Handling, Security
+
+🚀 Project Overview
+Create a Spring Boot REST API where users can:
+✅ Upload files to AWS S3
+✅ Download files from AWS S3
+✅ Delete files from AWS S3
+✅ List all uploaded files
+
+
+AWS S3 File Storage Service (Java + Spring Boot + AWS SDK)
+
+Developed a REST API for secure file uploads/downloads using Spring Boot.
+Integrated AWS S3 for scalable and cost-effective file storage.
+Implemented error handling and secure access controls.
+Containerized the application using Docker for easy deployment.
